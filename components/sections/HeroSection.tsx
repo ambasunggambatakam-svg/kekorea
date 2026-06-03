@@ -13,11 +13,11 @@ export function HeroSection() {
           {/* LEFT - Content */}
           <div className="space-y-8 animate-fade-in text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.15]">
-              Belajar Bahasa Korea, Latihan EPS-TOPIK & TOPIK, hingga Siap Kerja dan Kuliah di Korea 🇰🇷
+              Lulus Ujian EPS-TOPIK Lebih Mudah dengan Simulasi CBT Mirip Asli 🇰🇷
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Platform gratis dengan 100+ latihan interaktif, simulasi ujian, dan panduan lengkap untuk membantu kamu belajar bahasa Korea dan mempersiapkan diri ke Korea.
+              Persiapkan dirimu bekerja di Korea Selatan dengan ribuan latihan soal, simulasi Ujian EPS-TOPIK sistem UBT/CBT, dan pembahasan komprehensif.
             </p>
 
             {/* Micro trust */}
@@ -33,16 +33,16 @@ export function HeroSection() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Link 
-                href="#quick-action" 
+                href="#simulasi-cbt" 
                 className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-blue-600/30 transition-all hover:-translate-y-1 text-lg"
               >
-                <PlayCircle className="h-5 w-5" /> Mulai Latihan Gratis
+                <PlayCircle className="h-5 w-5" /> Simulasi CBT Gratis
               </Link>
               <Link 
-                href="#cek-level" 
+                href="#tryout-premium" 
                 className="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-4 px-8 rounded-xl transition-all text-lg"
               >
-                <BarChart3 className="h-5 w-5 text-blue-600" /> Cek Level Bahasa Korea
+                <BarChart3 className="h-5 w-5 text-blue-600" /> Daftar Tryout Premium
               </Link>
             </div>
           </div>
