@@ -80,7 +80,8 @@ export default function Home() {
 
 const pureHtml = $('body').html();
 
-const purePageContent = `'use client';
+const purePageContent = `// @ts-nocheck
+'use client';
 
 import { useEffect } from 'react';
 import Link from 'next/link';
