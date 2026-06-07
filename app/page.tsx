@@ -308,7 +308,7 @@ export default function Home() {
 <section class="hero" id="hero">
   <div class="hero-deco-arc"></div>
   <div class="hero-hangul-deco">한</div>
-  <div class="hero-accent-bar"></div>
+
   <div class="hero-container">
     <div class="hero-content">
       <div class="hero-ecosystem-badge">
@@ -439,9 +439,9 @@ export default function Home() {
         </div>
         <button class="quiz-submit-btn">Lanjut Soal Berikutnya →</button>
       </div>
-      <div class="hero-float-3"><span class="float-dot red"></span> Kerja &amp; Kuliah di Korea</div>
-      <div class="hero-float-1"><span class="float-dot"></span> 100.000+ Pengguna</div>
-      <div class="hero-float-2"><span class="float-dot yellow"></span> Lulus EPS-TOPIK &amp; TOPIK</div>
+      <div class="hero-float-3"><span class="float-dot"></span> 100.000+ Pengguna</div>
+      <div class="hero-float-1"><span class="float-dot yellow"></span> Lulus EPS-TOPIK &amp; TOPIK</div>
+      <div class="hero-float-2"><span class="float-dot red"></span> Kerja &amp; Kuliah di Korea</div>
     </div>
   </div>
   <div class="hero-wave">
