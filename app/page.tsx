@@ -439,9 +439,9 @@ export default function Home() {
         </div>
         <button class="quiz-submit-btn">Lanjut Soal Berikutnya →</button>
       </div>
-      <div class="hero-float-3"><span class="float-dot"></span> 100.000+ Pengguna</div>
-      <div class="hero-float-1"><span class="float-dot yellow"></span> Lulus EPS-TOPIK &amp; TOPIK</div>
-      <div class="hero-float-2"><span class="float-dot red"></span> Kerja &amp; Kuliah di Korea</div>
+      <div class="hero-float-3" style="bottom: -25px; right: 20px; top: auto;"><span class="float-dot"></span> 100.000+ Pengguna</div>
+      <div class="hero-float-1" style="top: 32%; right: -20px; bottom: auto;"><span class="float-dot yellow"></span> Lulus EPS-TOPIK &amp; TOPIK</div>
+      <div class="hero-float-2" style="bottom: 190px; left: -20px;"><span class="float-dot red"></span> Kerja &amp; Kuliah di Korea</div>
     </div>
   </div>
   <div class="hero-wave">
