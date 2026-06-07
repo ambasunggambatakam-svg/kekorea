@@ -8,6 +8,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     { label: "Testimoni", href: "/admin/testimonials", icon: MessageSquare },
     { label: "FAQ Manager", href: "/admin/faqs", icon: HelpCircle },
     { label: "Leads & Kontak", href: "/admin/leads", icon: Users },
+    { label: "Kelola Halaman", href: "/admin/pages", icon: FileText },
     { label: "Pengaturan & SEO", href: "/admin/settings", icon: Settings },
   ];
 

@@ -47,3 +47,13 @@ export const leads = pgTable("leads", {
   status: varchar("status", { length: 50 }).default("new").notNull(), // new, contacted, resolved
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
+
+export const dynamicPages = pgTable("dynamic_pages", {
+  id: serial("id").primaryKey(),
+  title: varchar("title", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull().unique(),
+  category: varchar("category", { length: 100 }),
+  content: text("content"),
+  isPublished: boolean("is_published").default(false).notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});

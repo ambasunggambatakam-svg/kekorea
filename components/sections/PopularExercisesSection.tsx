@@ -25,7 +25,7 @@ export function PopularExercisesSection() {
               {exercises.map((ex, i) => (
                 <Link
                   key={i}
-                  href="#"
+                  href={`/p/latihan-${ex.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                   className="flex items-center justify-between p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
                 >
                   <span className="font-medium text-gray-700 group-hover:text-blue-600 transition-colors">

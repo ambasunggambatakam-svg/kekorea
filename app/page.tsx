@@ -14,58 +14,8 @@ export default function Home() {
         navbar.classList.toggle('scrolled', window.scrollY > 20);
       });
       
-      // Mobile menu toggle
-      const navToggle = document.getElementById('navToggle');
-      const navMenu = document.getElementById('navMenu');
-      let menuJustToggled = false;
-      
-      navToggle.addEventListener('click', () => {
-        menuJustToggled = true;
-        navMenu.classList.toggle('open');
-        const isOpen = navMenu.classList.contains('open');
-        navToggle.style.transform = isOpen ? 'rotate(90deg)' : '';
-        if (!isOpen) {
-          document.querySelectorAll('.nav-dropdown.mobile-open').forEach(d => d.classList.remove('mobile-open'));
-          document.querySelectorAll('.nav-menu .nav-link svg').forEach(s => s.style.transform = '');
-        }
-      });
-      
-      document.addEventListener('click', (e) => {
-        if (menuJustToggled) { menuJustToggled = false; return; }
-        if (!navbar.contains(e.target)) {
-          navMenu.classList.remove('open');
-          navToggle.style.transform = '';
-          document.querySelectorAll('.nav-dropdown.mobile-open').forEach(d => d.classList.remove('mobile-open'));
-          document.querySelectorAll('.nav-menu .nav-link svg').forEach(s => s.style.transform = '');
-        }
-      });
-      
-      // Mobile nav dropdown click toggle
-      document.querySelectorAll('.nav-menu .nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-          if (window.innerWidth > 768) return;
-          const navItem = this.closest('.nav-item');
-          if (!navItem) return;
-          const dropdown = navItem.querySelector('.nav-dropdown');
-          if (!dropdown) return;
-          e.preventDefault();
-          // Close other open dropdowns
-          document.querySelectorAll('.nav-dropdown.mobile-open').forEach(d => {
-            if (d !== dropdown) {
-              d.classList.remove('mobile-open');
-              const otherArrow = d.closest('.nav-item')?.querySelector('.nav-link svg');
-              if (otherArrow) otherArrow.style.transform = '';
-            }
-          });
-          dropdown.classList.toggle('mobile-open');
-          // Rotate arrow
-          const arrow = this.querySelector('svg');
-          if (arrow) arrow.style.transform = dropdown.classList.contains('mobile-open') ? 'rotate(180deg)' : '';
-        });
-      });
-      
       // Belajar tabs
-      document.getElementById('belajarTabs').addEventListener('click', (e) => {
+      document.getElementById('belajarTabs')?.addEventListener('click', (e: any) => {
         const tab = e.target.closest('[data-tab]');
         if (!tab) return;
         document.querySelectorAll('.belajar-tab').forEach(t => t.classList.remove('active'));
@@ -1513,8 +1463,8 @@ export default function Home() {
             <h3>Hasil Kamu</h3>
           </div>
           <div class="tv-result-score">
-            <div class="tv-rs-value">{score}<span> / {total}</span></div>
-            <div class="tv-rs-level">Level: {getLevel()}</div>
+            <div class="tv-rs-value">8<span> / 10</span></div>
+            <div class="tv-rs-level">Level: Dasar</div>
           </div>
           <div class="tv-result-analysis">
             <div class="tv-ra-title">📊 Analisis</div>
