@@ -1477,7 +1477,7 @@ export default function Home() {
           </div>
           <div class="tv-result-cta">
             <p>🔥 Mau tahu peluang kamu lulus?</p>
-            <a href="https://wa.me/xxxxxxxxxx" target="_blank" class="btn btn-primary btn-wa">
+            <a href="https://wa.me/6282227151339?text=Halo" target="_blank" class="btn btn-primary btn-wa">
               👉 Gabung WhatsApp Channel
             </a>
           </div>

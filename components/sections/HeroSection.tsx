@@ -88,9 +88,9 @@ export function HeroSection() {
         <div className="hero-visual" style={{ position: 'relative' }}>
           <EcosystemPills />
           <QuizCardMockup />
-          <div className="hero-float-3"><span className="float-dot red" /> Kerja &amp; Kuliah di Korea</div>
-          <div className="hero-float-1"><span className="float-dot" /> 100.000+ Pengguna</div>
-          <div className="hero-float-2"><span className="float-dot yellow" /> Lulus EPS-TOPIK &amp; TOPIK</div>
+          <div className="hero-float-3"><span className="float-dot" /> 100.000+ Pengguna</div>
+          <div className="hero-float-1"><span className="float-dot yellow" /> Lulus EPS-TOPIK &amp; TOPIK</div>
+          <div className="hero-float-2"><span className="float-dot red" /> Kerja &amp; Kuliah di Korea</div>
         </div>
       </div>
 
