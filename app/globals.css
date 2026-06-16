@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@source "../components";
 
   :root {
     --blue: #2563EB;
@@ -2173,6 +2173,51 @@
     .tools-grid { grid-template-columns: 1fr; }
     .tujuan-grid { grid-template-columns: 1fr; }
     .belajar-tab { font-size: 11px; padding: 6px 8px; }
+  }
+
+  /* ══════════════════════════════════════════
+     FLOATING WHATSAPP BUTTON
+  ══════════════════════════════════════════ */
+  .floating-wa-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #25D366;
+    color: #ffffff;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+  }
+  .floating-wa-btn:hover {
+    background-color: #1EBE5D;
+  }
+  .floating-wa-ping {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background-color: #25D366;
+    animation: floatingWaPing 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  @keyframes floatingWaPing {
+    75%, 100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  .floating-wa-icon {
+    position: relative;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
   }
 
   /* ══════════════════════════════════════════
