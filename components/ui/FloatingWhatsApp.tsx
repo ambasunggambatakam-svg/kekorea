@@ -4,7 +4,8 @@ export function FloatingWhatsApp() {
       href="https://wa.me/6282227151339?text=Halo"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 left-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#1EBE5D] transition-colors hover:scale-110 active:scale-95"
+      className="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-[#1EBE5D] transition-colors hover:scale-110 active:scale-95"
+      style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}
       aria-label="Chat WhatsApp"
     >
       <svg
