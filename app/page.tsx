@@ -8,6 +8,50 @@ export default function Home() {
   useEffect(() => {
     try {
             
+      // Navbar Mobile Toggle
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('open');
+          if (navMenu.classList.contains('open')) {
+            navToggle.style.transform = 'rotate(90deg)';
+          } else {
+            navToggle.style.transform = '';
+          }
+        });
+      }
+
+      // Mobile Mega Menu Dropdown Toggle
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth <= 768) {
+            const parent = link.parentElement;
+            const dropdown = parent?.querySelector('.nav-dropdown');
+            if (dropdown) {
+              e.preventDefault();
+              
+              const isOpen = dropdown.classList.contains('mobile-open');
+              // Close all other dropdowns
+              document.querySelectorAll('.nav-dropdown').forEach(d => {
+                d.classList.remove('mobile-open');
+              });
+              document.querySelectorAll('.nav-link svg').forEach(svg => {
+                (svg as HTMLElement).style.transform = '';
+              });
+
+              if (!isOpen) {
+                dropdown.classList.add('mobile-open');
+                const chevron = link.querySelector('svg');
+                if (chevron) {
+                  (chevron as HTMLElement).style.transform = 'rotate(180deg)';
+                }
+              }
+            }
+          }
+        });
+      });
+
       // Navbar scroll effect
       const navbar = document.getElementById('navbar');
       window.addEventListener('scroll', () => {
