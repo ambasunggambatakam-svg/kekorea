@@ -1,0 +1,47 @@
+[TAILING] Tailing last 100 lines for [kekorea.id] process (change the value with --lines option)
+/root/.pm2/logs/kekorea.id-error.log last 100 lines:
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+4|kekorea. | Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+4|kekorea. | Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+4|kekorea. |     at ignore-listed frames
+
+/root/.pm2/logs/kekorea.id-out.log last 100 lines:
+4|kekorea. | 
+4|kekorea. | > kekorea@0.1.0 start
+4|kekorea. | > next start -p 3002
+4|kekorea. | 
+4|kekorea. | ▲ Next.js 16.2.6
+4|kekorea. | - Local:         http://localhost:3002
+4|kekorea. | - Network:       http://103.27.206.181:3002
+4|kekorea. | ✓ Ready in 212ms
+4|kekorea. | 
+4|kekorea. | > web@0.1.0 start
+4|kekorea. | > next start -p 3002
+4|kekorea. | 
+4|kekorea. | ▲ Next.js 16.2.0
+4|kekorea. | - Local:         http://localhost:3002
+4|kekorea. | - Network:       http://103.27.206.181:3002
+4|kekorea. | ✓ Ready in 278ms
+4|kekorea. | 
+4|kekorea. | > web@0.1.0 start
+4|kekorea. | > next start -p 3002
+4|kekorea. | 
+4|kekorea. | ▲ Next.js 16.2.0
+4|kekorea. | - Local:         http://localhost:3002
+4|kekorea. | - Network:       http://103.27.206.181:3002
+4|kekorea. | ✓ Ready in 223ms
+
